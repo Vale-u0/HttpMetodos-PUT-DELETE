@@ -1,0 +1,32 @@
+<!-- src/app/app.component.html -->
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Usuarios</h2>
+    <ul class="list-group">
+      <li *ngFor="let usuario of usuarios" class="list-group-item list-group-item-action">
+        <strong>{{ usuario.id }}</strong> - <strong>{{ usuario.nombre }}</strong> - {{ usuario.email }} - Empresa: {{ usuario.empresa }} <br>
+        <button class="btn-update" (click)="editarUsuario(usuario)">Editar</button>
+        <button type="submit" class="btn-delete" (click)="eliminarUsuario(usuario)">Eliminar</button>
+    </ul>
+  
+    <h2 class="mt-4">Agregar Usuario</h2>
+    <form (ngSubmit)="agregarUsuario()">
+      <div class="mb-3">
+        <label for="id" class="form-label">ID</label>
+        <input type="number" [(ngModel)]="nuevoUsuario.id" name="id" class="form-control" id="id">
+      </div>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" [(ngModel)]="nuevoUsuario.nombre" name="nombre" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" [(ngModel)]="nuevoUsuario.email" name="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="empresa" class="form-label">Empresa</label>
+        <input type="text" [(ngModel)]="nuevoUsuario.empresa" name="empresa" class="form-control" id="empresa">
+      </div>
+      <button type="submit" class="btn btn-primary">{{ editando ? 'Actualizar Usuario' : 'Agregar Usuario' }}</button>
+    </form>
+    <button type="button" class="btn btn-secondary" (click)="limpiarFormulario()">Cancelar</button>
+  </div>

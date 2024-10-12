@@ -1,0 +1,117 @@
+/* app.component.css */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-list li:last-child {
+    border-bottom: none;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.btn-delete {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-update {
+    background-color: #0059ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.new-user {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-user h3 {
+    margin-top: 0;
+}
+
+.new-user label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.new-user input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.btn-add {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #3e8e41;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
